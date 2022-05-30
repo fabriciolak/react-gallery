@@ -1,0 +1,44 @@
+.center {
+  width: 1200px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-rows: auto;
+
+  gap: 20px;
+
+}
+
+.gridItem {
+  padding: 10px;
+  border-radius: 6px;
+
+  box-sizing: border-box;
+  background-color: #eee;
+
+  cursor: pointer;
+}
+
+.gridItem__header {
+  width: 100%;
+}
+
+.gridItem__header img {
+  border-radius: 6px;
+  width: 100%;
+}
+
+.gridItem__content_p {
+  color: #202020;
+  font-weight: bold;
+}
+
+.gridItem:hover {
+  transition: .5ms ease-in;
+  background-color: rgb(212, 212, 212);
+}
